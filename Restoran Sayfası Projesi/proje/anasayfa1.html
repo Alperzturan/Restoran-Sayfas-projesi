@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Jacques Francois Shadow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'> <!--belgeye bir stil dosyasnın bağlandığını belirtir -->
+    <meta charset="UTF-8"> <!--çeşitli dillerden karakterleri doğru görünlülemeyi sağlar(ç,ğ,...) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--görevi sayfanın mobilde nasıl görüneceği
+    name= viewport belgenin görünüm alanını işaret eder viewport cihazın ekranında gösterilen aladr
+    width= device width cihazın ekran genişliğiyle görünüm ekran genişliğini eşleştirir
+    initial scale= 1.0sayfa ilk yüklendipinde ölöçeklemeyi belirler bu durumda normal boyutta görünür
+    -->
+    <title>Bilmem Ne Restaurant ANA SAYFA</title>
+    
+    <link rel="stylesheet" href=".\anasayfa.css">
+    <script src="navbar.js" defer></script><!--defer sayesinde dosya arja planda yüklenir ama html işlendikten sonra çalıştırılır-->
+
+</head>
+<body>
+
+
+    <header>
+        <div class="title"><!--restoran ismi ksımı-->
+            <h1>Bilmem Ne</h1>
+            <p>RESTAURANT</p>
+        </div>
+        <nav id="navbar"><!--sayfa kayınca hareket eden navbar kısmı-->
+            <a href="menü.html">Menü</a>
+            <a href="rezervasyon.html">Rezervasyon</a>
+        </nav>
+    </header>
+
+
+    <section class="serpme-kunefe"> <!--section içeriği anlamlı bölümlere ayırır ve bu bölümler arasında mantıksal bir ayrım yapar-->
+        <div class="content">
+            <div class="serpme">
+                <h2>Serpme Kahvaltı</h2>
+                <p>Her sabah, büyüleyici göl manzarasında zengin içerikli enfes serpme kahvaltı eşliğinde güne merhaba demek için sizleri Bilmem Ne’ye bekliyoruz.</p>
+            </div>
+            <div class="kunefe">
+                <h2>Künefe</h2>
+                <p>Ünlü "Bilmem Ne Künefesi"ni denemek için sizleri restoranlarımıza bekliyoruz</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="bas">Bilmem Ne'de Neler Var?</div>
+        <div class="stats">
+            <div>5’ten Fazla İçecek Çeşidi</div>
+            <div>10’dan Fazla Yiyecek Çeşidi</div>
+            <div>3 Farklı Restoran</div>
+            <div>30’dan Fazla Çalışan</div>
+        </div>
+    </section>
+
+
+    <footer><!--en alt kısmı-->
+        <h3>Bilmem Ne Restaurant</h3>
+        <div class="info">
+            <p>Adres: A Mahallesi, B Caddesi, C Sokak, Gölbaşı/ANKARA</p><br>
+            <p>Çalışma Saatleri: 09:00 - 23:00</p><br>
+            <p>Telefon: 0500 000 0000</p><br>
+            <p>Email: bizeulasin@bilmemne.com</p>
+        </div>
+    </footer>
+
+    
+
+
+</body>
+</html>

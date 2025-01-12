@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*tarayıcıların varsayılan stillerini sıfırlayarak ve düzenleyerek daha tutarlı bir tasarım elde etmek */
+
+
+header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url('restoran1.jpg');
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffaaaa;
+    text-align: left;
+}
+.title h1{
+    font-size: 70px;
+    background: #272828;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    font-family: "Jacques Francois Shadow";
+    margin-left: 60px;
+    margin-top: -175px;
+}
+.title p{
+    font-size: 40px;
+    background: #272828;
+    font-family: "Italianno";
+    margin-left: 60px;
+    color: #e9e1e1;
+    padding-left: 100px;
+    padding-right: 75px;
+    padding-bottom: 100px;
+}
+#navbar {
+    position: fixed; 
+    height: 120px;
+    top: 0; /*navbarın üste yapışık olmasjını sağalr*/
+    width: 100%;
+    padding: 15px 0;
+    background: #272828; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000; /*diğer şeylerden daha üstte olmasını dolayısyla her zaman görünmesin sağşar*/
+}
+
+#navbar a {
+    color: #ffaaaa;
+    text-decoration: none;/*yazıların sade olmasını sağlar*/
+    margin: 0 25px;
+    font-size: 50px; 
+    background: #272828;
+    padding: 0px 15px; 
+    border-radius: 8px;
+    font-family: "Italianno";
+}
+
+#navbar a:hover {
+    background: #e9e1e1;
+    color: #272828;
+}
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+}
+label {
+    font-size: 18px;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    background-color: #ffaaaa;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+button:hover {
+    background-color: #ffaaaa;
+}
+#calendar {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffaaaa;
+    color: white;
+    padding: 10px;
+    align-items: center;
+}
+.calendar-navigation {
+    display: flex;
+    gap: 10px;
+}
+.calendar-navigation button {
+    background-color: #ffaaaa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.calendar-navigation button:hover {
+    background-color: #ffaaaa;
+}
+.calendar-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* hücreleri eşit boyutta yapmak için */
+    flex-grow: 1; /* tabloyu genişletmek için */
+}
+.calendar-table th, .calendar-table td {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.calendar-table th {
+    background-color: #ffaaaa;
+    color: white;
+}
+.calendar-table td {
+    background-color: #f9f9f9;
+}
+.calendar-table td.selected {
+    background-color: #ffaaaa;
+    color: white;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: #272828;
+    background-size: cover;
+    color: #e9e1e1;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: bold;
+}
+footer .info {
+    margin: 20px 0;
+}
+
+/*CREATE TABLE reservations (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(30) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    reservation_date DATE NOT NULL,
+    reservation_time TIME NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id)
+);
+tablo oluşturmak için yazığım sql kodu
+*/

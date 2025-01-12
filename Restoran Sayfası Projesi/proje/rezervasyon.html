@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Jacques Francois Shadow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilmem Ne Restaurant REZERVASYON</title>
+    
+    <link rel="stylesheet" href=".\rezervasyon.css">
+    <script src="takvim.js" defer></script>
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="title">
+            <h1>Bilmem Ne</h1>
+            <p>RESTAURANT</p>
+        </div>
+        <nav id="navbar">
+            <a href="menü.html">Menü</a>
+            <a href="anasayfa1.html">Ana Sayfa</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Rezervasyon Formu</h1>
+        <form id="reservationForm" method="POST" action="rezervasyon.php">
+            <label for="name">Adınız Soyadınız:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="phone">Telefon Numaranız:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="date">Rezervasyon Tarihi:</label>
+            <div id="calendar"></div>
+            <input type="hidden" id="date" name="date" required> 
+        
+            <label for="time">Rezervasyon Saati:</label>
+            <select id="time" name="time" required></select>
+        
+            <button type="submit">Rezervasyonu Tamamla</button>
+        </form>
+    </div>
+    
+    <footer>
+        <h3>Bilmem Ne Restaurant</h3>
+        <div class="info">
+            <p>Adres: A Mahallesi, B Caddesi, C Sokak, Gölbaşı/ANKARA</p><br>
+            <p>Çalışma Saatleri: 09:00 - 23:00</p><br>
+            <p>Telefon: 0500 000 0000</p><br>
+            <p>Email: bizeulasin@bilmemne.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>

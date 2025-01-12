@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*tarayıcıların varsayılan stillerini sıfırlayarak ve düzenleyerek daha tutarlı bir tasarım elde etmek */
+
+
+header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url('restoran1.jpg');
+    display: flex; /*ögeleri yatay dikey... olarak hizalamanın daha kolay olmasnı sağlar, wrapper alanının esnek bir dzğen kullanmasının sağlar*/
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffaaaa;
+    text-align: left;
+}
+.title h1{
+    font-size: 70px;
+    background: #272828;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    font-family: "Jacques Francois Shadow";
+    margin-left: 60px;
+    margin-top: -175px;
+}
+.title p{
+    font-size: 40px;
+    background: #272828;
+    font-family: "Italianno";
+    margin-left: 60px;
+    color: #e9e1e1;
+    padding-left: 100px;
+    padding-right: 75px;
+    padding-bottom: 100px;
+}
+#navbar {
+    position: fixed; /*navbarın pozisyonunun aşağı kaydrınca sabit kalmasını sağlar*/
+    height: 120px;
+    top: 0; /*navbarın üste yapışık olmasjını sağalr*/
+    width: 100%;
+    padding: 15px 0;
+    background: #272828; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000; /*diğer şeylerden daha üstte olmasını dolayısyla her zaman görünmesin sağşar*/
+}
+
+#navbar a {
+    color: #ffaaaa;
+    text-decoration: none;/*yazıların sade olmasını sağlar*/
+    margin: 0 25px;
+    font-size: 50px; 
+    background: #272828;
+    padding: 0px 15px; 
+    border-radius: 8px;
+    font-family: "Italianno";
+}
+
+#navbar a:hover {
+    background: #e9e1e1;
+    color: #272828;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.menu {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px; /*köşe yumuşatma*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.yemek {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.yemek:last-child {
+    border-bottom: none;
+}
+.yemek h3 {
+    margin: 0;
+}
+.yemek p {
+    margin: 0;
+    color: #666;
+}
+.yemek span {
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+footer {
+    background-color: #272828;
+    background-size: cover;
+    color: #e9e1e1;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: bold;
+}
+footer .info {
+    margin: 20px 0;
+}
